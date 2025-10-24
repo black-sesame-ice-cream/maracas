@@ -47,14 +47,14 @@ Please see below for details.
 
 [License](LICENSE)
 
-[Third-Party Licenses](THIRD_PARTY_LICENSES.txt)
+[Third-Party Licenses](THIRD-PARTY-LICENSES.txt)
 
 ## ライセンス
 以下を参照してください。
 
 [ライセンス](LICENSE)
 
-[第三者ライセンス](THIRD_PARTY_LICENSES.txt)
+[第三者ライセンス](THIRD-PARTY-LICENSES.txt)
 
 ## Tech Stack
 - HTML
