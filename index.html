@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マラカスシミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.21.0/dist/lil-gui.umd.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <input type="file" id="image-input" accept="image/png" style="display: none;">
+    <input type="file" id="top-wall-sound-input" accept="audio/*" style="display: none;">
+    <input type="file" id="bottom-wall-sound-input" accept="audio/*" style="display: none;">
+    <input type="file" id="left-wall-sound-input" accept="audio/*" style="display: none;">
+    <input type="file" id="right-wall-sound-input" accept="audio/*" style="display: none;">
+    <input type="file" id="all-wall-sound-input" accept="audio/*" style="display: none;">
+
+    <div id="draggableBox"></div>
+    <img id="boxImage" src="images/default-image.png" alt="">
+    <div id="ball"></div>
+    <a href="https://github.com/black-sesame-ice-cream/maracas" target="_blank" rel="noopener noreferrer" class="github-icon-link" title="View on GitHub">
+            <img src="images/github-icon.png" alt="GitHub" />
+    </a>
+    <a href="https://korechika.booth.pm/items/7531140" target="_blank" rel="noopener noreferrer" class="booth-icon-link" title="View on BOOTH">
+            <img src="images/booth-icon.svg" alt="BOOTH" />
+    </a>
+</body>
+</html>

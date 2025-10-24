@@ -1,0 +1,85 @@
+/* ページの背景を透明にします */
+body {
+    font-family: sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* スクロールバーを非表示に */
+}
+
+/* ドラッグ対象のボックスのスタイル */
+#draggableBox {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: gray; /* 色を黒からグレーに変更 */
+    cursor: move;
+    user-select: none; /* テキスト選択を防止 */
+    top: 150px; /* 初期位置を調整 */
+    left: 50px;
+    z-index: 5; /* 一番奥に表示 */
+}
+
+/* ボックス内の画像のスタイル */
+#boxImage {
+    position: absolute;
+    /* JSでサイズと位置を制御 */
+    width: auto;
+    height: auto;
+    /* transformで中央揃えとスケーリング、回転を制御 */
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    /* スムーズな変形のためのtransition */
+    transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
+    pointer-events: none; /* 画像がドラッグ操作を妨げないようにする */
+    z-index: 15; /* 一番手前に表示 */
+}
+
+/* 赤い球のスタイル */
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%; /* 円形にする */
+    z-index: 10; /* 箱と画像の中間に表示 */
+    pointer-events: none; /* クリックイベントを透過させる */
+}
+
+/* lil-guiを右端に配置 */
+.lil-gui {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.github-icon-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.github-icon-link img {
+  width: 32px;
+  height: 32px;
+}
+
+.github-icon-link:hover img {
+  transform: scale(1.1);
+}
+
+.booth-icon-link {
+  position: fixed;
+  top: 55px;
+  left: 10px;
+  z-index: 999;
+}
+
+.booth-icon-link img {
+  width: 32px;
+  height: 32px;
+}
+
+.booth-icon-link:hover img {
+  transform: scale(1.1);
+}
